@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>E:\Code Projects\SETUP\|C:\Users\Akbar\Desktop\Publish\</PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory>https://total-slope.jimdosite.com/</SupportUrlHistory>
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory>https://download.microsoft.com/download/B/4/1/B4119C11-0423-477B-80EE-7A474314B347/NDP452-KB2901954-Web.exe|C:\Users\Akbar\Downloads|C:\</BootstrapperUrlHistory>
+    <ErrorReportUrlHistory>https://total-slope.jimdosite.com/</ErrorReportUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ProjectView>ShowAllFiles</ProjectView>
+  </PropertyGroup>
+</Project>

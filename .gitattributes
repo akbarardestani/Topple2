@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+Topple2[[:space:]]2.4.6.0.exe filter=lfs diff=lfs merge=lfs -text
+nmath_native_x64.dll filter=lfs diff=lfs merge=lfs -text
+nmath_native_x86.dll filter=lfs diff=lfs merge=lfs -text
+CenterSpace.NMath.6.2.0.50.nupkg filter=lfs diff=lfs merge=lfs -text
