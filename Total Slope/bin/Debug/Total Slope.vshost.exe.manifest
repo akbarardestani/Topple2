@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Total Slope.exe" size="854496">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Total Slope.exe" size="855008">
       <assemblyIdentity name="Total Slope" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KB/pjlQZswuQUgnFvxoyQiYJfwdBMMw8wQ/DWD9owAA=</dsig:DigestValue>
+        <dsig:DigestValue>wlu23RARIXLNSnPvN64R6c+SHEzhx5NFKQ8zEwyJ5Ao=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -2437,6 +2437,11 @@ namespace Total_Slope
 
         private void RadBtnAnalyticalSolution_Click(object sender, EventArgs e)
         {
+            Pnl_Analys.Enabled = true;
+            Pnl_AnalyticalSolution.Enabled = true;
+            Pnl_Analys.Visible = true;
+            Pnl_AnalyticalSolution.Visible = true;
+
             Excel_sheetNo = 0;
             Excel_Work = false;
 
@@ -2499,25 +2504,29 @@ namespace Total_Slope
 
         private void RadBtnDatabaseView_CheckedChanged(object sender, EventArgs e)
         {
-            Pnl_MaterialDefinition.Visible = false;
-            Pnl_Sketch.Visible = false;
-            Pnl_Joint.Visible = false;
-            Pnl_SlopeDefinition.Visible = false;
-            Pnl_ModelDefinittion.Visible = false;
-            Pnl_Kinematic.Visible = false;
-            Pnl_ForceDefinition.Visible = false;
-            Pnl_Analys.Visible = false;
-            Pnl_Activation_Code.Visible = false;
-            Pnl_Refferences.Visible = false;
-            Pnl_Database.Visible = true;
-            Pnl_ProbabilisticAnalysis.Visible = false;
-            Pnl_Database.BringToFront();
+            if (RadBtnDatabaseView.Checked == true)
+            {
+                Pnl_MaterialDefinition.Visible = false;
+                Pnl_Sketch.Visible = false;
+                Pnl_Joint.Visible = false;
+                Pnl_SlopeDefinition.Visible = false;
+                Pnl_ModelDefinittion.Visible = false;
+                Pnl_Kinematic.Visible = false;
+                Pnl_ForceDefinition.Visible = false;
+                Pnl_Analys.Visible = false;
+                Pnl_Activation_Code.Visible = false;
+                Pnl_Refferences.Visible = false;
+                Pnl_Database.Visible = true;
+                Pnl_ProbabilisticAnalysis.Visible = false;
+                Pnl_Database.BringToFront();
 
-            Btn_AddMaterial.Visible = false;
+                Btn_AddMaterial.Visible = false;
 
-            Rad_Btn_DB_Material.Checked = true;
+                Rad_Btn_DB_Material.Checked = true;
 
-            Retrieve_Material_Data();
+                Retrieve_Material_Data();
+            }
+
         }
 
         private void RadBtnRefferences_CheckedChanged(object sender, EventArgs e)
@@ -10171,6 +10180,11 @@ namespace Total_Slope
 
         private void RadBtnKinematicAnalysis_Click(object sender, EventArgs e)
         {
+            Pnl_Kinematic.Enabled = true;
+            Pnl_KinematicAnalysis.Enabled = true;
+            Pnl_Kinematic.Visible = true;
+            Pnl_KinematicAnalysis.Visible = true;
+
             if (SequenceList != null)
                 Draw_Model();
 
@@ -20440,6 +20454,11 @@ namespace Total_Slope
 
         private void RadBtnModelDefinition_Click(object sender, EventArgs e)
         {
+            Pnl_NewModel.Enabled = true;
+            Pnl_ModelDefinittion.Enabled = true;
+            Pnl_NewModel.Visible = true;
+            Pnl_ModelDefinittion.Visible = true;
+
             if (SequenceList != null)
                 Draw_Model();
             SqlCommand Query = new SqlCommand();
@@ -20471,6 +20490,11 @@ namespace Total_Slope
 
         private void RadBtnExternalForces_Click(object sender, EventArgs e)
         {
+            Pnl_ForceDefinition.Visible = true;
+            Pnl_ExternalForces.Visible = true;
+            Pnl_ForceDefinition.Enabled = true;
+            Pnl_ExternalForces.Enabled = true;
+
             if (SequenceList != null)
                 Draw_Model();
 
@@ -20515,6 +20539,17 @@ namespace Total_Slope
 
         private void RadBtnMaterialDefinition_Click(object sender, EventArgs e)
         {
+            Pnl_MaterialInput.Enabled = true;
+            Pnl_MaterialDefinition.Enabled = true;
+            Pnl_MaterialInput.Visible = true;
+            Pnl_MaterialDefinition.Visible = true;
+            Pnl_Joint.SendToBack();
+            Pnl_Kinematic.SendToBack();
+            Pnl_SlopeDefinition.SendToBack();
+            Pnl_ForceDefinition.SendToBack();
+            Pnl_ModelDefinittion.SendToBack();
+
+
             if (SequenceList != null)
                 Draw_Model();
         }
